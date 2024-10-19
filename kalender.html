@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalender Hari Besar Islam 2024-2025</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      text-align: center;
+    }
+
+    .header {
+      background-color: #00bfa5;
+      color: white;
+      padding: 20px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .header .logo img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .header .nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .header .nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .back-arrow {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 24px;
+      color: white;
+      text-decoration: none;
+      background-color: #00bfa5;
+      padding: 10px;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .holiday {
+      background-color: #ffff99;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+
+  <!-- Ust. Ali Muhadi Masykur Profile Section -->
+  <div class="header">
+    <div class="logo">
+      <img alt="Profile picture of Ust. Ali Muhadi Masykur" src="img/foto1.jpg"/>
+      <span>Ust. Ali Muhadi Masykur</span>
+    </div>
+    <div class="nav">
+      <a href="index2.html">Home</a>
+      <a href="vidio.html">Video Dakwah</a>
+      <a href="kalender.html">Kalender Hari Besar Islam</a>
+      <a href="#">Jadwal Kajian</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Kalender Hari Besar Islam 2024-2025</h1>
+    <table id="calendar-table">
+      <tr>
+        <th>Tanggal Hijriah</th>
+        <th>Tanggal Nasional</th>
+        <th>Tanggal Jawa</th>
+        <th>Keterangan</th>
+      </tr>
+      <tbody id="calendar-body">
+        <!-- table rows will be generated dynamically using JavaScript -->
+      </tbody>
+    </table>
+    <div class="footer">
+      <p>Catatan: Tanggal dalam kalender Islam bersifat lunar dan dapat bervariasi tergantung pada pengamatan bulan.</p>
+    </div>
+  </div>
+
+  <script>
+    // define Islamic holidays for 2024 and 2025
+    const islamicHolidays = [
+      { date: '1 Muharram 1445', name: 'Tahun Baru Islam', nationalDate: '16 Januari 2024', jawaDate: '1 Sura 1958' },
+      { date: '10 Muharram 1445', name: 'Asyura', nationalDate: '25 Januari 2024', jawaDate: '10 Sura 1958' },
+      { date: '12 Rabiul Awal 1445', name: 'Maulid Nabi Muhammad SAW', nationalDate: '7 Februari 2024', jawaDate: '12 Mulud 1958' },
+      { date: '27 Rajab 1445', name: 'Isra Mi\'raj', nationalDate: '22 Maret 2024', jawaDate: '27 Rejeb 1958' },
+      { date: '1 Ramadan 1445', name: 'Awal Ramadan', nationalDate: '10 April 2024', jawaDate: '1 Pasa 1958' },
+      { date: '15 Ramadan 1445', name: 'Nisfu Ramadan', nationalDate: '25 April 2024', jawaDate: '15 Pasa 1958' },
+      { date: '1 Syawal 1445', name: 'Hari Raya Idul Fitri', nationalDate: '24 Mei 2024', jawaDate: '1 Syawal 1958' },
+      { date: '9 Dzulhijjah 1445', name: 'Wukuf Arafah', nationalDate: '19 Juli 2024', jawaDate: '9 Dulqaidah 1958' },
+      { date: '10 Dzulhijjah 1445', name: 'Hari Raya Idul Adha', nationalDate: '20 Juli 2024', jawaDate: '10 Dulqaidah 1958' },
+      { date: '1 Muharram 1446', name: 'Tahun Baru Islam', nationalDate: '5 Januari 2025', jawaDate: '1 Sura 1959' },
+      { date: '10 Muharram 1446', name: 'Asyura', nationalDate: '14 Januari 2025', jawaDate: '10 Sura 1959' },
+      { date: '12 Rabiul Awal 1446', name: 'Maulid Nabi Muhammad SAW', nationalDate: '26 Januari 2025', jawaDate: '12 Mulud 1959' },
+      { date: '27 Rajab 1446', name: 'Isra Mi\'raj', nationalDate: '10 Maret 2025', jawaDate: '27 Rejeb 1959' },
+      { date: '1 Ramadan 1446', name: 'Awal Ramadan', nationalDate: '20 Maret 2025', jawaDate: '1 Pasa 1959' },
+      { date: '15 Ramadan 1446', name: 'Nisfu Ramadan', nationalDate: '4 April 2025', jawaDate: '15 Pasa 1959' },
+      { date: '1 Syawal 1446', name: 'Hari Raya Idul Fitri', nationalDate: '19 April 2025', jawaDate: '1 Syawal 1959' },
+      { date: '9 Dzulhijjah 1446', name: 'Wukuf Arafah', nationalDate: '3 Juni 2025', jawaDate: '9 Dulqaidah 1959' },
+      { date: '10 Dzulhijjah 1446', name: 'Hari Raya Idul Adha', nationalDate: '4 Juni 2025', jawaDate: '10 Dulqaidah 1959' },
+      { date: '15 Dzulhijjah 1446', name: 'Hari Tasyrik', nationalDate: '9 Juni 2025', jawaDate: '15 Dulqaidah 1959' },
+      { date: '15 Dzulhijjah 1446', name: 'Hari Tasyrik', nationalDate: '10 Juni 2025', jawaDate: '15 Dulqaidah 1959' },
+      { date: '15 Dzulhijjah 1446', name: 'Hari Tasyrik', nationalDate: '11 Juni 2025', jawaDate: '15 Dulqaidah 1959' },
+      { date: '1 Muharram 1447', name: 'Tahun Baru Islam', nationalDate: '25 Desember 2025', jawaDate: '1 Sura 1960' }
+    ];
+
+    // generate table rows dynamically
+    islamicHolidays.forEach(holiday => {
+      const row = `
+        <tr class="holiday">
+          <td>${holiday.date}</td>
+          <td>${holiday.nationalDate}</td>
+          <td>${holiday.jawaDate}</td>
+          <td>${holiday.name}</td>
+        </tr>
+      `;
+      document.getElementById('calendar-body').innerHTML += row;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Kegiatan Mingguan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      text-align: center;
+    }
+
+    .header {
+      background-color: #00bfa5;
+      color: white;
+      padding: 20px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .header .logo img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .header .nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .header .nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .back-arrow {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 24px;
+      color: white;
+      text-decoration: none;
+      background-color: #00bfa5;
+      padding: 10px;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #00bfa5;
+      color: white;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <!-- Ust. Ali Muhadi Masykur Profile Section -->
+  <div class="header">
+    <div class="logo">
+      <img alt="Profile picture of Ust. Ali Muhadi Masykur" src="img/foto1.jpg"/>
+      <span>Ust. Ali Muhadi Masykur</span>
+    </div>
+    <div class="nav">
+      <a href="index2.html">Home</a>
+      <a href="vidio.html">Video Dakwah</a>
+      <a href="kalender.html">Kalender Hari Besar Islam</a>
+      <a href="#">Jadwal Kajian</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Jadwal Kegiatan Mingguan</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Hari</th>
+          <th>Kegiatan</th>
+          <th>Waktu</th>
+          <th>Lokasi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Senin</td>
+          <td>Kajian Tafsir</td>
+          <td>19:00 - 20:30</td>
+          <td>Masjid Nurul Huda</td>
+        </tr>
+        <tr>
+          <td>Selasa</td>
+          <td>Pelatihan Tilawah</td>
+          <td>18:00 - 19:30</td>
+          <td>Masjid Agung</td>
+        </tr>
+        <tr>
+          <td>Rabu</td>
+          <td>Majelis Taklim</td>
+          <td>16:00 - 18:00</td>
+          <td>Rumah Dakwah</td>
+        </tr>
+        <tr>
+          <td>Kamis</td>
+          <td>Pengajian Anak</td>
+          <td>17:00 - 18:30</td>
+          <td>TPQ Al-Ikhlas</td>
+        </tr>
+        <tr>
+          <td>Jumat</td>
+          <td>Pengajian Umum</td>
+          <td>18:00 - 20:00</td>
+          <td>Masjid Raya</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="footer">
+      <p>Catatan: Jadwal kegiatan dapat berubah sewaktu-waktu sesuai dengan kebijakan panitia.</p>
+    </div>
+  </div>
+</body>
+</html>

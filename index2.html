@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ust. Ali Muhadi Masykur & Profil Singkat</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .header {
+            background-color: #00bfa5;
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 40px;
+        }
+        .header .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .header .nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .content {
+            display: flex;
+            align-items: flex-start; /* Aligns items to the top */
+            justify-content: center;
+            padding: 2.3cm;
+        }
+        .content .profile-pic {
+            border-radius: 70%;
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+            margin-right: 50px;
+        }
+        .content .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .content .profile-info {
+            max-width: 500px;
+        }
+        .content .profile-info h1 {
+            font-size: 36px;
+            margin: 10px 0;
+        }
+        .content .profile-info h1 span {
+            color: #00bfa5;
+        }
+        .content .profile-info p {
+            font-size: 18px;
+            color: #666;
+        }
+        .content .profile-info .social-icons {
+            margin-top: 20px;
+        }
+        .content .profile-info .social-icons a {
+            color: #00bfa5;
+            font-size: 24px;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+
+        /* Profil Singkat Section */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .title {
+            text-align: center;
+            color: #00bfa5;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .content-singkat {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start; /* Align items to the top */
+        }
+        .text {
+            width: 60%;
+            line-height: 1.6;
+        }
+        .image {
+            width: 35%;
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Gallery Section */
+        .gallery-container {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .gallery-container h1 {
+            color: #00bfa5;
+            font-size: 2em;
+        }
+        .gallery {
+            display: flex; /* Use flexbox for horizontal alignment */
+            overflow-x: auto; /* Allow horizontal scrolling if needed */
+            gap: 20px; /* Space between images */
+            margin-top: 20px;
+            padding: 0 20px; /* Padding for responsiveness */
+        }
+
+        .gallery img {
+            width: 100%; /* Full width of the grid cell */
+            height: 200px; /* Fixed height */
+            object-fit: cover; /* Maintain aspect ratio */
+            border-radius: 10px;
+        }
+
+        /* Google Maps Section */
+        .map-container {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f8f8f8;
+        }
+        .map-container .title {
+            font-size: 24px;
+            color: #00bfa5;
+            font-weight: bold;
+        }
+        .map-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .map {
+            margin-right: 20px;
+        }
+        .map img {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #ddd;
+        }
+        .details {
+            text-align: left;
+        }
+        .details p {
+            margin: 5px 0;
+        }
+        .footer {
+            background-color: #00bfa5;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Ust. Ali Muhadi Masykur Profile Section -->
+    <div class="header">
+        <div class="logo">
+            <img alt="Profile picture of Ust. Ali Muhadi Masykur" src="img/foto1.jpg"/>
+            <span>Ust. Ali Muhadi Masykur</span>
+        </div>
+        <div class="nav">
+            <a href="vidio.html">Video Dakwah</a>
+            <a href="kalender.html">Kalender Hari Besar Islam</a>
+            <a href="jadwal.html">Jadwal Kajian</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="profile-pic">
+            <img alt="Ust. Ali Muhadi Masykur speaking into a microphone" src="img/foto7.jpg"/>
+        </div>
+        <div class="profile-info">
+            <p>اَلسَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</p>
+            <h1>Ustadz Ali <span>Muhadi Masykur</span></h1>
+            <p>"Mengajak dengan Hikmah, Menginspirasi dengan Ilmu, dan Menguatkan Iman untuk Kebaikan Dunia dan Akhirat."</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://quran.com/id/juz/30"><i class="fas fa-quran"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profil Singkat Section -->
+    <div class="container">
+        <div class="title">Profil Singkat</div>
+        <div class="content-singkat">
+            <div class="section">
+                <div class="text">
+                    <p>Ustaz Abdullah Khududin adalah seorang dai dan pendidik Islam yang dikenal dengan dedikasinya yang dalam dan mendalam. Lahir di Jakarta pada tanggal 15 Juli 1978, beliau telah menempuh pendidikan Islam di berbagai lembaga terkemuka, baik domestik maupun internasional. Ustaz Abdullah aktif memberikan ceramah di berbagai masjid, pusat pengembangan dakwah, sekolah, dan juga musonah.</p>
+                    <h3>Kegiatan Sosial</h3>
+                    <p>Selain berdakwah, Ustaz Abdullah juga terlibat dalam berbagai kegiatan sosial. Beliau adalah pendiri lembaga yayasan Cinta Islam, sebuah organisasi non-profit yang berfokus pada pendidikan dan kesejahteraan umat. Melalui yayasan ini, beliau telah membantu ribuan anak yatim, serta pelajar dari berbagai daerah.</p>
+                    <h3>Kehidupan Pribadi</h3>
+                    <p>Dalam kehidupan pribadinya, Ustaz Abdullah menikah dengan Siti Aminah, seorang aktivis Muslimah yang juga aktif dalam kegiatan sosial dan pendidikan. Mereka dikaruniai tiga orang anak yang saat ini sedang menempuh pendidikan di berbagai jenjang. Ustaz Abdullah dikenal sebagai sosok yang ramah, rendah hati, dan memiliki komitmen mendalam untuk mendidik generasi Muslim yang berakhlak mulia.</p>
+                </div>
+                <div class="image">
+                    <img alt="Ustaz Abdullah Khududin memberikan ceramah dengan mikrofon di tangan, mengenakan topi dan kacamata." src="img/foto1.jpg"/>
+                </div>
+            </div>
+            <div class="section">
+                <div class="image">
+                    <img alt="Ustaz Abdullah Khududin tersenyum sambil memegang mikrofon, mengenakan topi dan kacamata." src="img/foto2.jpg"/>
+                </div>
+                <div class="text">
+                    <h3>Perjalanan Karier</h3>
+                    <p>Ustaz Abdullah memulai karir dakwahnya pada usia muda, dan hingga saat ini telah memiliki lebih dari 20 tahun pengalaman dalam memberikan pelajaran agama Islam. Beliau dikenal dengan pendekatan dakwah yang menyentuh hati dan mengedukasi, selalu berusaha untuk menjadikan setiap kajian bermanfaat bagi jamaahnya.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="gallery-container ">
+        <h1>Galeri Kegiatan</h1>
+        <div class="gallery grid-cols-3">
+            <img alt="Ustaz Abdullah Khududin di acara kajian" src="img/foto3.jpg"/>
+            <img alt="Ustaz Abdullah Khududin di acara sosial" src="img/foto4.jpg"/>
+            <img alt="Ustaz Abdullah Khududin berinteraksi dengan jamaah" src="img/foto5.jpg"/>
+            <img alt="Ustaz Abdullah Khududin dalam acara pendidikan" src="img/foto6.jpg"/>
+        </div>
+    </div>
+
+    <!-- Google Maps Section -->
+    <div class="map-container">
+        <div class="title">Lokasi Kegiatan</div>
+        <div class="map-content">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345099426!2d144.9537353153183!3d-37.81720997975189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f0f32c3%3A0x5045675218ceed6!2sMelbourne%20Town%20Hall!5e0!3m2!1sen!2sau!4v1632945696528!5m2!1sen!2sau"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"></iframe>
+            </div>
+            <div class="details">
+                <p><strong>Nama Tempat:</strong> Melbourne Town Hall</p>
+                <p><strong>Alamat:</strong> 90-130 Swanston St, Melbourne VIC 3000, Australia</p>
+                <p><strong>Jam Operasional:</strong> Setiap hari, 09:00 - 17:00</p>
+                <p><strong>Kontak:</strong> 123-456-789</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Hak Cipta &copy; 2024 Ust. Ali Muhadi Masykur</p>
+    </div>
+</body>
+</html>
